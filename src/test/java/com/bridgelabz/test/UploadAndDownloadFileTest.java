@@ -1,5 +1,6 @@
 package com.bridgelabz.test;
 
+import com.bridgelabz.base.BaseClass;
 import com.bridgelabz.base.IAutoConstant;
 import com.bridgelabz.model.UploadAndDownloadFile;
 import org.openqa.selenium.WebDriver;
@@ -11,21 +12,15 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class UploadAndDownloadFileTest implements IAutoConstant {
+public class UploadAndDownloadFileTest extends BaseClass implements IAutoConstant {
 
-    WebDriver driver;
+
     UploadAndDownloadFile uploadAndDownloadFile;
-
-    @BeforeMethod
-    public void setUp() {
-        System.setProperty(CHROMEKEY,CHROMEVALUE);
-         driver = new ChromeDriver();
-         uploadAndDownloadFile = new UploadAndDownloadFile(driver);
-    }
 
     @Test
     public void uploadFile(){
         driver.get("http://demo.automationtesting.in/Register.html");
+        uploadAndDownloadFile = new UploadAndDownloadFile(driver);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         uploadAndDownloadFile.uploadFile("/home/slot1/Downloads/006 Email Samples(1).pdf");
     }
@@ -34,12 +29,8 @@ public class UploadAndDownloadFileTest implements IAutoConstant {
     public void downloadFile()
     {
         driver.get("http://demo.automationtesting.in/FileDownload.html");
+        uploadAndDownloadFile = new UploadAndDownloadFile(driver);
         WebDriverWait driverWait = new WebDriverWait(driver,20);
         uploadAndDownloadFile.downloadFile();
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        driver.close();
     }
 }
