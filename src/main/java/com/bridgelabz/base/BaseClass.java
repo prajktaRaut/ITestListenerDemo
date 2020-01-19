@@ -29,6 +29,5 @@ public class BaseClass implements IAutoConstant{
     @AfterMethod
     public void tearDown() {
         driver.close();
-        driver.quit();
     }
 }
