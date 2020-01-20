@@ -13,7 +13,6 @@ public class DragAndDropTest extends BaseClass {
 
     @Test
     public void performDragAndDropOperation(){
-        driver.get("http://demo.guru99.com/test/drag_drop.html");
         dragAndDrop = new DragAndDrop(driver);
         dragAndDrop.selectButtonToDragAndDrop(driver);
     }

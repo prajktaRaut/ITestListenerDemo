@@ -1,5 +1,6 @@
 package com.bridgelabz.base;
 
+import com.bridgelabz.properties.Library;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -21,7 +22,9 @@ public class BaseClass implements IAutoConstant{
         options.addArguments("--disable-notifications");
         System.setProperty(CHROMEKEY,CHROMEVALUE);
         driver = new ChromeDriver(options);
+        String url = Library.getProperty(CONFIG, "URL");
         driver.manage().window().maximize();
+        driver.get(url);
     }
 
     @AfterMethod
