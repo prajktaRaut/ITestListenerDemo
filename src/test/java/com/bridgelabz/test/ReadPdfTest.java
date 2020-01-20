@@ -9,9 +9,7 @@ public class ReadPdfTest extends BaseClass {
 
     @Test
     public void readPdf() throws IOException {
-
         ReadPdf readPdf = new ReadPdf();
         readPdf.readPdfAndGetPdfData();
-
     }
 }
