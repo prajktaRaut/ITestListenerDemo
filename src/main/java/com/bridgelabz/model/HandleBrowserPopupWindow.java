@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class HandleBrowserPopupWindow {
 
-    public void handleMultipleWindow(WebDriver driver)
+    public void handleBrowserPopupWindow(WebDriver driver)
     {
         String parentWindow = driver.getWindowHandle();
         // It returns no. of windows opened by WebDriver and will return Set of Strings

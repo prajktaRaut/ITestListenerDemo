@@ -11,6 +11,6 @@ public class BrowserPopupTest extends BaseClass {
     {
         driver.get("http://www.naukri.com/");
         HandleBrowserPopupWindow handleWindow = new HandleBrowserPopupWindow();
-        handleWindow.handleMultipleWindow(driver);
+        handleWindow.handleBrowserPopupWindow(driver);
     }
 }

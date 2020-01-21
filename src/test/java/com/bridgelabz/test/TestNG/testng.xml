@@ -14,11 +14,11 @@
                     <include name="performDragAndDropOperation"/>
                 </methods>
             </class>
-          <!--  <class name="com.bridgelabz.test.MultipleWindowTest">
+            <class name="com.bridgelabz.test.MultipleWindowTest">
                 <methods>
                     <include name="testName"/>
                 </methods>
-            </class>-->
+            </class>
             <class name="com.bridgelabz.test.ReadPdfTest">
                 <methods>
                     <include name="readPdf"/>
