@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class MultipleWindowTest extends BaseClass implements IAutoConstant {
 
     @Test
-    public void testName() {
+    public void handleMultipleWindowsUsingWindowHandles() {
         driver.get("http://demo.guru99.com/popup.php");
         HandleMultipleWindow handleWindow = new HandleMultipleWindow(driver);
         handleWindow.clickOnClickHereButton();
