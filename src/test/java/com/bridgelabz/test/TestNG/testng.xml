@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/home/slot1/Documents/PrajktaRaut/Project/IListenaerDemo/src/test/java/com/bridgelabz/test">
+        <classes>
+            <class name="com.bridgelabz.test.BrowserPopupTest">
+                <methods>
+                    <include name="handleBrowserPopupUsingWindowHandler"/>
+                </methods>
+            </class>
+            <class name="com.bridgelabz.test.DragAndDropTest">
+                <methods>
+                    <include name="performDragAndDropOperation"/>
+                </methods>
+            </class>
+          <!--  <class name="com.bridgelabz.test.MultipleWindowTest">
+                <methods>
+                    <include name="testName"/>
+                </methods>
+            </class>-->
+            <class name="com.bridgelabz.test.ReadPdfTest">
+                <methods>
+                    <include name="readPdf"/>
+                </methods>
+            </class>
+            <class name="com.bridgelabz.test.ScreenshotsTest">
+                <methods>
+                    <include name="getScreenShotsUsingITestListener"/>
+                </methods>
+            </class>
+            <class name="com.bridgelabz.test.UploadAndDownloadFileTest">
+                <methods>
+                    <include name="uploadFile"/>
+                    <include name="downloadFile"/>
+                </methods>
+            </class>
+            <class name="com.bridgelabz.test.alertPopupTest">
+                <methods>
+                    <include name="handleAlertPopup"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

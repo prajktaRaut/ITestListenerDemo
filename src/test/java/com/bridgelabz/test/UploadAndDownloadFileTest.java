@@ -14,6 +14,7 @@ public class UploadAndDownloadFileTest extends BaseClass implements IAutoConstan
 
     @Test
     public void uploadFile(){
+        driver.get("http://demo.automationtesting.in/Register.html");
         uploadAndDownloadFile = new UploadAndDownloadFile(driver);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         uploadAndDownloadFile.uploadFile("/home/slot1/Downloads/006 Email Samples(1).pdf");
@@ -22,6 +23,7 @@ public class UploadAndDownloadFileTest extends BaseClass implements IAutoConstan
     @Test
     public void downloadFile()
     {
+        driver.get("http://demo.automationtesting.in/FileDownload.html");
         uploadAndDownloadFile = new UploadAndDownloadFile(driver);
         uploadAndDownloadFile.downloadFile();
     }

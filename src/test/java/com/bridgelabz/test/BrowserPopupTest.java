@@ -9,6 +9,7 @@ public class BrowserPopupTest extends BaseClass {
     @Test
     public void handleBrowserPopupUsingWindowHandler()
     {
+        driver.get("http://www.naukri.com/");
         HandleBrowserPopupWindow handleWindow = new HandleBrowserPopupWindow();
         handleWindow.handleMultipleWindow(driver);
     }

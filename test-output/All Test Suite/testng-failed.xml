@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="/home/slot1/Documents/PrajktaRaut/Project/IListenaerDemo/src/test/java/com/bridgelabz/test/MultipleWindowTest.java(failed)">
+    <classes>
+      <class name="com.bridgelabz.test.MultipleWindowTest">
+        <methods>
+          <include name="testName"/>
+        </methods>
+      </class> <!-- com.bridgelabz.test.MultipleWindowTest -->
+    </classes>
+  </test> <!-- /home/slot1/Documents/PrajktaRaut/Project/IListenaerDemo/src/test/java/com/bridgelabz/test/MultipleWindowTest.java(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

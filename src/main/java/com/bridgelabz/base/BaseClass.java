@@ -19,12 +19,12 @@ public class BaseClass implements IAutoConstant{
     @BeforeMethod
     public void setUp(Method method) {
         methodName=method.getName();
-        options.addArguments("--disable-notifications");
+        //options.addArguments("--disable-notifications");
         System.setProperty(CHROMEKEY,CHROMEVALUE);
-        driver = new ChromeDriver(options);
-        String url = Library.getProperty(CONFIG, "URL");
+        driver = new ChromeDriver();
+       // String url = Library.getProperty(CONFIG, "URL");
         driver.manage().window().maximize();
-        driver.get(url);
+        //driver.get(url);
     }
 
     @AfterMethod

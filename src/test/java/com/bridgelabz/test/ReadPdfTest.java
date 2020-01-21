@@ -9,6 +9,7 @@ public class ReadPdfTest extends BaseClass {
 
     @Test
     public void readPdf() throws IOException {
+        driver.get("http://www.vandevenbv.nl/dynamics/modules/SFIL0200/view.php?fil_Id=5515");
         ReadPdf readPdf = new ReadPdf();
         readPdf.readPdfAndGetPdfData();
     }

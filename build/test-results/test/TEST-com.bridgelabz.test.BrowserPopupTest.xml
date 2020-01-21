@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.test.BrowserPopupTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-21T04:38:03" hostname="FH400" time="0.832">
+  <properties/>
+  <testcase name="handleBrowserPopupUsingWindowHandler" classname="com.bridgelabz.test.BrowserPopupTest" time="0.832"/>
+  <system-out><![CDATA[Tech Mahindra
+LnT
+Baker Hughes
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 28974
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jan 21, 2020 10:07:42 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

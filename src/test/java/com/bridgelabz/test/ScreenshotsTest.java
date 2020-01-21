@@ -10,6 +10,7 @@ public class ScreenshotsTest extends BaseClass {
 
     @Test
     public void getScreenShotsUsingITestListener() {
+        driver.get("https://www.facebook.com");
         LoginPages loginPages = new LoginPages(driver);
         loginPages.setUserName("9764324126");
         loginPages.setPasswordField("Psraut@123");
